@@ -583,7 +583,7 @@ PlayerSettings:
   metroCertificatePassword: 
   metroCertificateSubject: Holographic Academy
   metroCertificateIssuer: Holographic Academy
-  metroCertificateNotAfter: 006e1bf01b4ed401
+  metroCertificateNotAfter: 80dd109d524ed401
   metroApplicationDescription: Test
   wsaImages:
     65636: 
