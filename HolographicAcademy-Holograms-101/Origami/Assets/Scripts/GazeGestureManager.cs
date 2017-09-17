@@ -19,6 +19,7 @@ public class GazeGestureManager : MonoBehaviour
         recognizer = new GestureRecognizer();
         recognizer.TappedEvent += (source, tapCount, ray) =>
         {
+            Debug.Log("Selected Object" + FocusedObject);
             // Send an OnSelect message to the focused object and its ancestors.
             if (FocusedObject != null)
             {
@@ -39,6 +40,7 @@ public class GazeGestureManager : MonoBehaviour
         var headPosition = Camera.main.transform.position;
         var gazeDirection = Camera.main.transform.forward;
 
+        
         RaycastHit hitInfo;
         if (Physics.Raycast(headPosition, gazeDirection, out hitInfo))
         {
